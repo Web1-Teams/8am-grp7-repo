@@ -1,0 +1,58 @@
+
+
+.img1 {
+    width: 70px;      /* The width of the image is set to 20px */
+    height: 60px;     /* The height of the image is set to 20px */
+    object-fit: cover;  /* Ensures the image is not distorted and covers the box */
+  }
+  
+  /* Styling for the navbar */
+  .Navbar {
+    background-color: rgb(100, 108, 184);  /* Set navbar background to black */
+    width: 100%;              /* Navbar width takes up the full width of the container */
+    height: 80px;             /* Set navbar height to 50px */
+    display: flex;            /* Use flexbox for layout */
+   /* justify-content: space-between;  /* Space out the items: left for logo and right for links */
+    align-items: center;      /* Vertically align items in the center */
+    padding: 0 20px;          /* Add some padding to the left and right */
+  }
+  
+  .Navbar .logo {
+    display: flex;            /* Use flex to arrange the logo and name horizontally */
+    align-items: center;      /* Center align the items vertically */
+    gap: 10px;                /* Add space between image and name */
+  }
+  
+  .Navbar .logo img {
+    width: 70px;              /* Set image size (adjust as needed) */
+    height: 60px;             /* Set image size */
+    object-fit: cover;        /* Make sure image doesn't stretch */
+  }
+  
+  .Navbar .logo span {
+    color: rgb(194, 15, 15);             /* Set text color to white */
+    font-size: 20px;          /* Set font size for website name */
+    font-weight: bold;  
+   
+  }
+  
+  .Navbar .nav-links-container {
+    flex-grow: 1;             /* This takes up all the available space */
+    display: flex;            /* Use flex to arrange links horizontally */
+    justify-content: center;  /* Center the links in the available space */
+  }
+  
+  .Navbar .nav-links {
+    display: flex;            /* Arrange links horizontally */
+    gap: 20px;                /* Add space between each link */
+  }
+  
+  .Navbar .nav-links a {
+    color: white;            /* Set link color to white */
+    text-decoration: none;   /* Remove underline from links */
+    font-size: 16px;         /* Set font size for the links */
+  }
+  
+  .Navbar .nav-links a:hover {
+    text-decoration: underline;  /* Add underline on hover */
+  }
