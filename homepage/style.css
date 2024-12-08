@@ -1,0 +1,113 @@
+
+body {
+background-image: url(backgr1.png);
+ background-size: 71%;
+ background-repeat: no-repeat;
+ background-position: right;
+ background-attachment: fixed;
+ font-family: 'Franklin Gothic Medium';
+}
+.logo {
+height: 200px;
+width: 200px;
+margin-top: -40px;
+}
+
+nav{
+   display: flex;
+   height: 100px;
+   background-color: rgb(37, 36, 36);
+}
+nav ul{
+    flex :1;
+    text-align: center;
+    margin-left: -250px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 12px;
+    margin-top: 20px;  
+    justify-content: center;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500px;
+    display: inline-block;
+}
+
+nav ul li a:hover{
+    color: rgb(113, 113, 243);
+    animation: big ;
+    animation-duration: 0.5s;
+}
+.Welcome{
+ margin-top: 100px;
+}
+h2 {
+    font-family: Comic Sans MS ;
+    color: blue;
+    margin-top: -50px;
+    margin-bottom: 100px;
+    align-items: center;
+   justify-content: center;
+   display: flex;
+   font-size: 30px;
+}
+h3{
+    font-family: Comic Sans MS ;
+    color: black;
+    margin: 80PX;
+    visibility: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 23PX;
+}
+@keyframes big{
+    
+    0%{
+        transform: scale(0.5);
+        color: white;
+    }
+    50%{
+       transform: scale(1);
+       color: white;
+    }
+    75%{    
+        transform: scale(1.3);
+        color: white;
+    }
+    100%{
+        transform: scale(1);
+        color: white;
+
+    }
+}
+@keyframes typing {
+    0% {
+        visibility: visible;
+        width: 0;
+    }
+    100% {
+        width: 100%;
+        visibility: visible;
+    }
+ 
+}
+.text1{
+    animation: typing 10s normal 1s forwards ;
+
+}
+.text2{
+    animation: typing 10s normal 4s forwards;
+
+}
+.text3{
+    animation: typing 10s normal 6s forwards ;
+
+}
+.text4{
+    animation: typing 10s normal 8s forwards ;
+}
