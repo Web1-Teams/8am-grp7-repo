@@ -13,12 +13,12 @@ const Header=()=>{
           <span>Eduminute</span> {/* project name */}
         </div>
 
-        {/* Empty container to take up space between the logo and links */}
+
         <div className="nav-links-container">
-          {/* Navigation Links */}
+       
           <div className="nav-links">
             <a href="Home">Home</a>
-            <a href="#Challenges">challenges</a>
+            <a href="#Challenges">Challenges</a>
             <a href="#Education">Education</a>
             <a href="#Contact">Contact</a>
            
