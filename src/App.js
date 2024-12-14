@@ -1,16 +1,27 @@
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
-import Header from './components/Header'
-import Background from './components/Background'
-import Card from './components/Card'
-import img4 from "./img/pro.jpg"
-import Footer from './components/Footer';
+import Home from "./pages/Home";
+import Education from "./pages/Education";
+import Challenge from "./pages/Challenges";
+import AppLayout from "./components/AppLayout";
+
 function App() {
-  return (<div>
-    <Header/>
-    < Background/>
-    <Card   imgsrc={img4}  title="Programming" description=" Challenge your programming knowledge" />
-   <Footer/>
-  </div>
+  return (
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<AppLayout />}>
+            <Route index element={<Navigate replace to="/home" />} />
+            <Route index path="/home" element={<Home />} />
+            <Route path="/challenges" element={<Challenge />} />
+            <Route path="/education" element={<Education />} />
+          </Route>
+
+          {/* Catch-all route for 404 Page Not Found */}
+          <Route path="*" element={<div>Page Not Found</div>} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 

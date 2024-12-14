@@ -1,33 +1,28 @@
-import img1 from '../img/imgl.jpg'
-import'./Header.css'
-    
+import { Link } from "react-router-dom";
+import "./Header.css";
 
+import img1 from "../img/imgl.jpg";
 
-const Header=()=>{
-    return (
-      <div>
+const Header = () => {
+  return (
+    <div>
       <div className="Navbar">
-        {/* img and project Name */}
         <div className="logo">
-          <img src={img1} alt="Logo" /> {/* Logo image */}
-          <span>Eduminute</span> {/* project name */}
+          <img src={img1} alt="Logo" />
+          <span>Eduminute</span>
         </div>
 
-
         <div className="nav-links-container">
-       
           <div className="nav-links">
-            <a href="Home">Home</a>
-            <a href="#Challenges">Challenges</a>
-            <a href="#Education">Education</a>
-            <a href="#Contact">Contact</a>
-           
+            <Link to="/home">Home</Link> {/* Ensure correct path */}
+            <Link to="/challenges">Challenges</Link> {/* Ensure correct path */}
+            <Link to="/education">Education</Link> {/* Ensure correct path */}
+            <Link to="/contact">Contact</Link> {/* Use Link instead of a */}
           </div>
         </div>
       </div>
     </div>
-   
-    )
-}
-export default Header; 
+  );
+};
 
+export default Header;
