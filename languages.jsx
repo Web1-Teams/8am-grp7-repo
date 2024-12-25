@@ -12,11 +12,9 @@ function Languages() {
     return (
       <section className="Languages py-5">
       <div className="container">
-        {/* بطاقة تحتوي على المحتوى */}
         <div className="card mx-auto" style={{ maxWidth: '900px' }}>
           <div className="card-body">
             <div className="row">
-              {/* قسم الأدب */}
               <div className="col-md-12 mb-4">
               <div className="txt-literature">
                   <h1>Literature</h1>
