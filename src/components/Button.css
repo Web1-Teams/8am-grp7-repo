@@ -1,0 +1,23 @@
+.button1 {
+  
+ width:80%;
+    height: 15rem;
+    padding: 10px 20px;
+    font-size: 26px;
+  
+    border: none;
+    border-radius: 5px;
+    background-color: #3c59bb;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s;
+    text-decoration: none; /* Remove underline from Link */
+    text-align: center;
+  }
+  
+  .button1:hover {
+  transform: scale(1.1);
+  }
+  
+  .button1:active {
+    background-color: #1a0541;
+}

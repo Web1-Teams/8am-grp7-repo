@@ -1,58 +1,105 @@
 
+/* Styling for the Navbar */
+.Navbar {
+  background-color: rgb(0, 160, 253);  /* Set navbar background to blue */
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  /* Spread logo and links, space between them */
+  padding: 0 20px;
+  position: relative;
+}
 
-.img1 {
-    width: 70px;      /* The width of the image is set to 20px */
-    height: 60px;     /* The height of the image is set to 20px */
-    object-fit: cover;  /* Ensures the image is not distorted and covers the box */
-  }
-  
-  /* Styling for the navbar */
-  .Navbar {
-    background-color: rgb(0, 160, 253);  /* Set navbar background to black */
-    width: 100%;              /* Navbar width takes up the full width of the container */
-    height: 80px;             /* Set navbar height to 50px */
-    display: flex;            /*  */
-   /* justify-content: space-between;  /* Space out the items: left for logo and right for links */
-    align-items: center;      /* Vertically align items in the center */
-    padding: 0 20px;          /* Add some padding to the left and right */
-  }
-  
-  .Navbar .logo {
-    display: flex;            /* Use flex to arrange the logo and name horizontally */
-    align-items: center;      /* Center align the items vertically */
-    gap: 10px;                /* Add space between image and name */
-  }
-  
-  .Navbar .logo img {
-    width: 70px;              /* Set image size (adjust as needed) */
-    height: 60px;             /* Set image size */
-    object-fit: cover;        /* Make sure image doesn't stretch */
-  }
-  
-  .Navbar .logo span {
-    color: rgb(194, 15, 15);             /* Set text color to white */
-    font-size: 20px;          /* Set font size for website name */
-    font-weight: bold;  
-   
-  }
-  
-  .Navbar .nav-links-container {
-    flex-grow: 1;             /* This takes up all the available space */
-    display: flex;            /* Use flex to arrange links horizontally */
-    justify-content: center;  /* Center the links in the available space */
-  }
-  
+/* Styling for the logo section */
+.Navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* Adjust this section if needed (it will now stick to the left by default) */
+}
+
+/* Styling for the logo image */
+.Navbar .logo-img {
+  width: 70px;
+  height: 60px;
+  object-fit: cover;
+}
+
+/* Styling for the logo text */
+.Navbar .logo span {
+  color: rgb(194, 15, 15);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Styling for the navigation links container */
+.Navbar .nav-links-container {
+  flex-grow: 1;  /* This ensures the container takes up available space */
+  display: flex;
+  justify-content: center;  /* Center the navigation links */
+  align-items: center;  /* Ensure the links are vertically aligned */
+}
+
+/* Styling for the navigation links */
+.Navbar .nav-links {
+  display: flex;  /* Arrange links in a row */
+  gap: 20px;  /* Space out the links */
+}
+
+/* Styling for each individual link */
+.Navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Add underline on hover */
+.Navbar .nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Styling for the hamburger icon */
+.Navbar .hamburger-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Dropdown Menu for small screens */
+.Navbar .dropdown-menu {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgb(8, 8, 8);
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.Navbar .dropdown-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
   .Navbar .nav-links {
-    display: flex;            /* Arrange links horizontally */
-    gap: 20px;                /* Add space between each link */
+    display: none;  /* Hide links in default state on small screens */
   }
-  
-  .Navbar .nav-links a {
-    color: white;            /* Set link color to white */
-    text-decoration: none;   /* Remove underline from links */
-    font-size: 16px;         /* Set font size for the links */
+
+
+  .Navbar .hamburger-icon {
+    display: block;
   }
-  
-  .Navbar .nav-links a:hover {
-    text-decoration: underline;  /* Add underline on hover */
+
+  /* Display dropdown menu when it is toggled */
+  .Navbar .dropdown-menu.open {
+    display: flex;  /* Show dropdown menu when it's open */
   }
+}
+

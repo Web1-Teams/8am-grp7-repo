@@ -19,34 +19,33 @@
     margin-top: auto;  /* Push footer to the bottom */
   }
   
-  /* Social Media Links */
+ 
   .social-links {
     display: flex;
     justify-content: center;
-    gap: 1.25rem;  /* 20px gap between icons */
-    margin-top: 0.625rem;  /* 10px top margin */
+    gap: 1.25rem; 
+    margin-top: 0.625rem;  
   }
   
-  /* Social Media Icons */
   .footer-img {
-    width: 2.5rem;  /* 40px icon size */
-    height: 2.5rem;  /* 40px icon size */
-    transition: transform 0.3s ease-in-out;  /* Smooth hover effect */
+    width: 2.5rem;  
+    height: 2.5rem;
+    transition: transform 0.3s ease-in-out;  
   }
   
   .footer-img:hover {
-    transform: scale(1.1);  /* Slight zoom on hover */
+    transform: scale(1.1);  
   }
   
-  /* Media Query for screens smaller than 600px */
-  @media (max-width: 37.5rem) {  /* 600px */
+
+  @media (max-width: 37.5rem) {  
     .social-links {
-      gap: 1rem;  /* 16px gap on smaller screens */
+      gap: 1rem;  
     }
   
     .footer-img {
-      width: 2.1875rem;  /* 35px icon size */
-      height: 2.1875rem;  /* 35px icon size */
+      width: 2.1875rem;  
+      height: 2.1875rem;  
     }
   }
   .hr {
