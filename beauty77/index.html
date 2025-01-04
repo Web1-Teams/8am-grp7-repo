@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty and Skincare Guide</title>
+    <style>
+        .content .skin-type {
+            background-color: #ffccda;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .products .product img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        #makeup-tips {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff0f5;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #makeup-tips h2 {
+            color: #ff80aa;
+        }
+
+        #makeup-tips ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #makeup-tips li {
+            margin-bottom: 10px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6f2;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            color: #ff80aa;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            color: #ff80aa;
+        }
+
+        .content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .content li {
+            margin: 10px 0;
+        }
+
+        .products {
+            margin-top: 20px;
+        }
+
+        .products .product {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .products img {
+            max-width: 100px;
+            max-height: 100px;
+            margin-right: 15px;
+            border-radius: 5px;
+        }
+
+        .products .product-info {
+            flex: 1;
+        }
+
+        .products .product-info h3 {
+            margin: 0;
+            color: #ff80aa;
+        }
+
+        .products .product-info p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 600px) {
+            .content {
+                padding: 10px;
+            }
+
+            .products .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .products img {
+                margin: 0 0 10px 0;
+                max-width: 100%;
+                max-height: auto;
+            }
+
+            .products .product-info h3 {
+                font-size: 1.2rem;
+            }
+
+            .products .product-info p {
+                font-size: 0.9rem;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Beauty and Skincare Guide</h1>
+    </header>
+
+    <div class="content">
+        <h2>Skin Types and Recommendations</h2>
+        <ul>
+            <li class="skin-type">Oily Skin: Use lightweight, oil-free moisturizers and clay-based masks.</li>
+            <li class="skin-type">Dry Skin: Opt for rich creams and hydrating masks with hyaluronic acid.</li>
+            <li class="skin-type">Combination Skin: Balance with gel moisturizers and masks targeting different zones.</li>
+            <li class="skin-type">Sensitive Skin: Choose fragrance-free, calming products with aloe vera or chamomile.</li>
+            <li class="skin-type">Normal Skin: Maintain with balanced products and occasional hydrating masks.</li>
+        </ul>
+
+        <div id="makeup-tips">
+            <h2>Makeup Tips</h2>
+            <ul>
+                <li>Foundation: Choose a foundation matching your skin tone and type (matte for oily skin, hydrating for dry skin).</li>
+                <li>Mascara: Opt for volumizing mascara for fuller lashes, or lengthening for added definition.</li>
+                <li>Lipstick: Hydrating lipsticks are ideal for dry lips, while matte lipsticks provide a long-lasting finish.</li>
+                <li>Blush: Use powder blush for oily skin and cream blush for dry or normal skin.</li>
+                <li>Eyeshadow: Neutral shades suit daily use, while bold colors are great for special occasions.</li>
+            </ul>
+        </div>
+
+        <div class="products">
+            <h2>Skincare Products</h2>
+            <div class="product">
+                <img src="77/IMG-20250103-WA0053.jpg" alt="Hydrating Cream">
+                <div class="product-info">
+                    <h3>Hydrating Cream</h3>
+                    <p>Perfect for dry and sensitive skin, with aloe vera and shea butter.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="77/IMG-20250103-WA0052.jpg" alt="Oil-Control Gel">
+                <div class="product-info">
+                    <h3>Oil-Control Gel</h3>
+                    <p>Lightweight gel moisturizer, ideal for oily and combination skin.</p>
+                </div>
+            </div>
+
+            <h2>Makeup Products</h2>
+            <div class="product">
+                <img src="77/Screenshot 2025-01-04 161223.png" alt="Liquid Foundation">
+                <div class="product-info">
+                    <h3>Liquid Foundation</h3>
+                    <p>Provides full coverage and a natural finish.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="77/IMG-20250103-WA0071.jpg" alt="Matte Lipstick">
+                <div class="product-info">
+                    <h3>Matte Lipstick</h3>
+                    <p>Long-lasting and smudge-proof, perfect for any occasion.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
