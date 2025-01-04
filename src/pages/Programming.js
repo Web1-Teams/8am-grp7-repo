@@ -2,14 +2,13 @@ import Button from "../components/Button";
 import styled from "styled-components";
 
 const Container = styled.div`
-    width: 100%; 
-  height: 82vh; 
-  display: flex; 
+  width: 100%;
+  height: 82vh;
+  display: flex;
   flex-direction: column;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   background-color: rgba(24, 95, 226, 0.49);
- 
 `;
 
 export default function Programming() {
