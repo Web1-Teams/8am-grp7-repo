@@ -24,12 +24,18 @@ function App() {
 
             <Route path="/programming" element={<Programming />} />
 <<<<<<< HEAD
+<<<<<<< HEAD
             <Route path="/Health" element={<Health />} />
 =======
+=======
+>>>>>>> 161d159e16fc70a238cea7fa92821c6b5d3cd1d1
             <Route path="Programming/HTML" element={<HTML />} />
             <Route path="Programming/CSS" element={<CSS />} />
             <Route path="Programming/JavaScript" element={<JavaScript />} />
             <Route path="Programming/React" element={<React />} />
+<<<<<<< HEAD
+>>>>>>> 161d159e16fc70a238cea7fa92821c6b5d3cd1d1
+=======
 >>>>>>> 161d159e16fc70a238cea7fa92821c6b5d3cd1d1
           </Route>
 
