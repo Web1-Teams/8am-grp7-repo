@@ -1,14 +1,11 @@
- import img2 from '../img/home.jpg'
- import './Background.css'
-  const Background =()=>{
-return(
+import img2 from "../img/home.jpg";
+import "./Background.css";
 
-
-<div>
-    <img  src={img2}  alt='back ground'   className='img2'              />
-</div>
-
-)
-
-  }
-  export default Background;
+const Background = () => {
+  return (
+    <div>
+      <img src={img2} alt="back ground" className="img2" />
+    </div>
+  );
+};
+export default Background;

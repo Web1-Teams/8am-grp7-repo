@@ -1,33 +1,43 @@
-import img1 from '../img/imgl.jpg'
-import'./Header.css'
-    
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import "./Header.css";
 
+import img1 from "../img/imgl.jpg";
 
-const Header=()=>{
-    return (
-      <div>
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  return (
+    <div>
       <div className="Navbar">
-        {/* img and project Name */}
         <div className="logo">
-          <img src={img1} alt="Logo" /> {/* Logo image */}
-          <span>Eduminute</span> {/* project name */}
+          <img src={img1} alt="Logo" className="logo-img" />
+          <span>Eduminute</span>
         </div>
 
-        {/* Empty container to take up space between the logo and links */}
         <div className="nav-links-container">
-          {/* Navigation Links */}
           <div className="nav-links">
-            <a href="Home">Home</a>
-            <a href="#Challenges">challenges</a>
-            <a href="#Education">Education</a>
-            <a href="#Contact">Contact</a>
-           
+            <Link to="/home">Home</Link>
+            <Link to="/challenges">Challenges</Link>
+            <Link to="/education">Education</Link>
           </div>
+
+          <div className="hamburger-icon" onClick={toggleMenu}>
+            ☰
+          </div>
+        </div>
+
+        <div className={`dropdown-menu ${isMenuOpen ? "open" : ""}`}>
+          <Link to="/home">Home</Link>
+          <Link to="/challenges">Challenges</Link>
+          <Link to="/education">Education</Link>
         </div>
       </div>
     </div>
-   
-    )
-}
-export default Header; 
+  );
+};
 
+export default Header;
