@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Education from "./pages/Education";
 import Challenge from "./pages/Challenges";
 import AppLayout from "./components/AppLayout";
+import Programming from "./pages/Programming";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route index path="/home" element={<Home />} />
             <Route path="/challenges" element={<Challenge />} />
             <Route path="/education" element={<Education />} />
+            <Route path="/programming" element={<Programming />} />
           </Route>
 
           {/* Catch-all route for 404 Page Not Found */}

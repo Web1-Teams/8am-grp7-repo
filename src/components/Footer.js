@@ -4,6 +4,7 @@ import Instagram from "../img/Instagram.png";
 import githup from "../img/githup.png";
 import gmail from "../img/gmail.png";
 import "./Footer.css";
+
 const Footer = () => {
   return (
     <footer className="footer-container">

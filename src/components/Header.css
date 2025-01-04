@@ -1,65 +1,61 @@
 
 /* Styling for the Navbar */
 .Navbar {
-  background-color: rgb(0, 160, 253);  /* Set navbar background to blue */
+  background-color: rgb(0, 160, 253); 
   width: 100%;
-  height: 80px;
+  height: 6vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;  /* Spread logo and links, space between them */
+  justify-content: space-between;
   padding: 0 20px;
   position: relative;
 }
 
-/* Styling for the logo section */
+
 .Navbar .logo {
   display: flex;
   align-items: center;
   gap: 10px;
-  /* Adjust this section if needed (it will now stick to the left by default) */
 }
 
-/* Styling for the logo image */
 .Navbar .logo-img {
   width: 70px;
   height: 60px;
   object-fit: cover;
 }
 
-/* Styling for the logo text */
+
 .Navbar .logo span {
   color: rgb(194, 15, 15);
   font-size: 20px;
   font-weight: bold;
 }
 
-/* Styling for the navigation links container */
+
 .Navbar .nav-links-container {
-  flex-grow: 1;  /* This ensures the container takes up available space */
+  flex-grow: 1; 
   display: flex;
-  justify-content: center;  /* Center the navigation links */
-  align-items: center;  /* Ensure the links are vertically aligned */
-}
-
-/* Styling for the navigation links */
+  justify-content: center; 
+  align-items: center; 
+ }
+ 
 .Navbar .nav-links {
-  display: flex;  /* Arrange links in a row */
-  gap: 20px;  /* Space out the links */
+  display: flex;  
+  gap: 20px;  
 }
 
-/* Styling for each individual link */
+
 .Navbar .nav-links a {
   color: white;
   text-decoration: none;
   font-size: 16px;
 }
 
-/* Add underline on hover */
+
 .Navbar .nav-links a:hover {
   text-decoration: underline;
 }
 
-/* Styling for the hamburger icon */
 .Navbar .hamburger-icon {
   display: none;
   font-size: 30px;
@@ -67,7 +63,7 @@
   padding: 10px;
 }
 
-/* Dropdown Menu for small screens */
+
 .Navbar .dropdown-menu {
   display: none;
   flex-direction: column;
@@ -89,17 +85,15 @@
 
 @media (max-width: 768px) {
   .Navbar .nav-links {
-    display: none;  /* Hide links in default state on small screens */
+    display: none;  
   }
-
 
   .Navbar .hamburger-icon {
     display: block;
   }
 
-  /* Display dropdown menu when it is toggled */
   .Navbar .dropdown-menu.open {
-    display: flex;  /* Show dropdown menu when it's open */
+    display: flex;  
   }
 }
 

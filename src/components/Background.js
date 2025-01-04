@@ -1,5 +1,6 @@
 import img2 from "../img/home.jpg";
 import "./Background.css";
+
 const Background = () => {
   return (
     <div>

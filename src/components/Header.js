@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
+
 import img1 from "../img/imgl.jpg";
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // state to toggle menu visibility
-
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen); // Toggle menu state
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -26,13 +26,11 @@ const Header = () => {
             <Link to="/contact">Contact</Link>
           </div>
 
-          {/* Hamburger Icon for small screens */}
           <div className="hamburger-icon" onClick={toggleMenu}>
             ☰
           </div>
         </div>
 
-        {/* Dropdown Menu for small screens */}
         <div className={`dropdown-menu ${isMenuOpen ? "open" : ""}`}>
           <Link to="/home">Home</Link>
           <Link to="/challenges">Challenges</Link>
