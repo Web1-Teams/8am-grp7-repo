@@ -28,6 +28,7 @@ export default function Education() {
         imgsrc={img5}
         title=" Health & Sports"
         description=" Test your knowledge on beauty treatments"
+        link="Health"
       />
       <Card
         imgsrc={img6}
