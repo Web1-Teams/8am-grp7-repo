@@ -23,7 +23,6 @@ const Header = () => {
             <Link to="/home">Home</Link>
             <Link to="/challenges">Challenges</Link>
             <Link to="/education">Education</Link>
-            <Link to="/contact">Contact</Link>
           </div>
 
           <div className="hamburger-icon" onClick={toggleMenu}>
@@ -35,7 +34,6 @@ const Header = () => {
           <Link to="/home">Home</Link>
           <Link to="/challenges">Challenges</Link>
           <Link to="/education">Education</Link>
-          <Link to="/contact">Contact</Link>
         </div>
       </div>
     </div>

@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+  
   position: relative;
 }
 
@@ -37,6 +38,7 @@
   display: flex;
   justify-content: center; 
   align-items: center; 
+  
  }
  
 .Navbar .nav-links {
