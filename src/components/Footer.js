@@ -13,6 +13,7 @@ const Footer = () => {
           href="https://www.facebook.com/"
           aria-label="Facebook"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img src={facebook} alt="Facebook logo " className="footer-img" />
         </a>
@@ -23,6 +24,7 @@ const Footer = () => {
           href="https://www.instagram.com/"
           aria-label="Instagram"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img src={Instagram} alt="Instagram logo " className="footer-img" />
         </a>
@@ -30,6 +32,7 @@ const Footer = () => {
           href="https://workspace.google.com/intl/en-US/gmail/"
           aria-label="gmail"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img src={gmail} alt="gmail logo" className="footer-img" />
         </a>
@@ -37,6 +40,7 @@ const Footer = () => {
           href="https://github.com/orgs/Web1-Teams/teams/8am-grp7-team"
           aria-label="githup"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img src={githup} alt="githup logo" className="footer-img" />
         </a>

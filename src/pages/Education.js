@@ -8,6 +8,7 @@ import img7 from "../img/Beauty.jpg";
 
 const Container = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color: #3670aa;
@@ -21,23 +22,26 @@ export default function Education() {
       <Card
         imgsrc={img4}
         title="Programming"
-        description=" Challenge your programming skills"
+        description="Let's learn about  programming "
         link="Programming"
       />
       <Card
         imgsrc={img5}
         title=" Health & Sports"
-        description=" Test your knowledge on beauty treatments"
+        description=" Let's learn about Health & Sports "
+        link=" "
       />
       <Card
         imgsrc={img6}
-        title="Programming"
-        description=" Challenge your programming knowledge"
+        title=" Literature"
+        description=" Let's learn about Literature "
+        link="Languages"
       />
       <Card
         imgsrc={img7}
-        title="Progrg"
-        description=" Challenge your programming knowledge"
+        title="Beauty"
+        description="Let's learn about Beauty "
+        link=" "
       />
     </Container>
   );
