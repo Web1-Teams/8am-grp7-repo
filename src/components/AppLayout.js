@@ -6,7 +6,7 @@ import Header from "./Header";
 
 const Container = styled.div`
   background-color: #3670aa;
-  height: 100vh;
+ // height: 100vh;
 `;
 
 export default function AppLayout() {
