@@ -10,6 +10,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   background-color: #3670aa;
   height: 82vh;
   gap: 2rem;
@@ -26,17 +27,17 @@ export default function challenges() {
       <Card
         imgsrc={img5}
         title=" Health & Sports"
-        description=" Test your knowledge on beauty treatments"
+        description=" Test your knowledge on Health & Sports treatments"
       />
       <Card
         imgsrc={img6}
-        title="Programming"
-        description=" Challenge your programming knowledge"
+        title="Literature"
+        description="In the boundless world of literature, where words intertwine with ideas, every book offers a chance to discover new realms—are you ready to take on the challenge and uncover the secrets of literature?"
       />
       <Card
         imgsrc={img7}
-        title="Programming"
-        description=" Challenge your programming knowledge"
+        title="Beauty"
+        description="In the world of beauty, where colors and techniques blend to create stunning looks, are you ready to embark on a challenge to discover the secrets of beauty and the art of elegance?"
       />
     </Container>
   );

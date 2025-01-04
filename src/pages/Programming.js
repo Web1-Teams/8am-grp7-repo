@@ -18,7 +18,7 @@ export default function Programming() {
       <Button link="HTML" />
       <Button link="CSS" />
       <Button link="JavaScript" />
-      <Button link="REACT" />
+      <Button link="React" />
     </Container>
   );
 }
